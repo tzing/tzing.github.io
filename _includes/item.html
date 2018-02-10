@@ -1,0 +1,43 @@
+<div class="item">
+
+  <!-- image -->
+  {% if include.image %}
+  <div class="ui small image">
+    {% include img.html src=include.image %}
+  </div>
+  {% endif %}
+
+  <div class="content">
+
+    <!-- item header -->
+    <div class="header">
+      {% if include.header_link %}
+      <a href="{{ include.header_link }}">{{ include.header }}</a>
+      {% else %}
+      {{ include.header }}
+      {% endif %}
+    </div>
+
+    <!-- item meta -->
+    {% if include.meta %}
+    <div class="meta">{{ include.meta }}</div>
+    {% endif %}
+
+    <!-- item description -->
+    {% if include.description %}
+    <div class="description">
+      {% include _item/description.html
+          type=include.type
+          description=include.description
+          labels=include.labels
+      %}
+    </div>
+    {% endif %}
+
+    <!-- item extra -->
+    {% if include.extra %}
+    <div class="extra">{{ include.extra }}</div>
+    {% endif %}
+
+  </div><!-- ./content -->
+</div><!-- ./item -->

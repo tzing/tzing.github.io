@@ -1,0 +1,30 @@
+---
+layout: base
+---
+{% comment %} Sidebar Menu {% endcomment %}
+<div class="ui vertical sidebar menu">
+  {% include menu.html %}
+</div>
+
+<div class="pusher">
+
+  {% comment %} Top Menu {% endcomment %}
+  <div class="ui container">
+    <div class="ui large secondary pointing menu">
+      <div class="right menu">
+        <a class="toc item">
+          <i class="sidebar icon"></i>
+        </a>
+        {% include menu.html %}
+      </div>
+    </div>
+  </div>
+
+  <div class="ui vertical segment">
+    <div class="ui text container">
+        {{ content }}
+    </div>
+  </div>
+
+  {% include footer.html %}
+</div>

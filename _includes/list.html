@@ -1,0 +1,33 @@
+<div class="ui vertical segment">
+  <div class="ui stackable grid text container">
+
+    <!--  section title  -->
+    <div class="six wide column">
+      <div class="ui sticky">
+        <h2>
+          {% if include.icon %}<i class="{{ include.icon }} icon"></i>{% endif %}
+          {{ include.title }}
+        </h2>
+      </div>
+    </div>
+
+    <!--  list  -->
+    <div class="ten wide column">
+      <div class="ui divided items">
+
+        {% for item in site.data[ include.data ][ include.list ] %}
+          {% include item.html
+              header=item.header
+              meta=item.meta
+              type=item.type
+              description=item.description
+              labels=item.labels
+              extra=item.extra
+          %}
+        {% endfor %}
+
+      </div>
+    </div><!-- ./10-column list -->
+
+  </div>
+</div>

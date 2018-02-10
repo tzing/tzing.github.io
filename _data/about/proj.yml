@@ -1,0 +1,42 @@
+- header: Investment Advicer Robot
+  meta: >
+    2016 - 2017, cooperate with
+    <a href="https://www.capital.com.tw/">Capital Securities</a>
+  description:
+    - We trained a robot to recognize keywords related to financial products.
+      In the demonstration it could give investment advice after input an article.
+    - Leading a team of 3 people and cooperate with financial experts in Capital
+      Securities to complete this project.
+  labels:
+    - icon: newspaper
+      text: News
+      link: https://udn.com/news/story/7239/2803341
+
+- header: Intelligent Stereo Image Processing in Mobile System
+  meta: 2015
+  description:
+    - Third author, this paper was in proceeding of <em>2015 International
+      Conference on Industrial Application Engineering</em>.
+    - Assisted in applying normalized-cut algorithm to RGB-D data.
+  labels:
+    - icon: file pdf outline
+      text: Paper
+      link: https://www2.ia-engineers.org/iciae/index.php/iciae/iciae2015/paper/view/650/473
+
+- header: Embedded Computer Vision Algorithms for Automatic Optical Inspection based on Heterogeneous System Architecture
+  meta: >
+    2014 - 2016,
+    <a href="https://www.grb.gov.tw/search/planDetail?id=8279615&docId=0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BTMN7PwNkRYCYbvlkXuAYaQ%3D%3D">
+      MOST project
+    </a>
+  description: >
+    Implemented an image registration algorithm as a custom kernel on the OpenVX framework and use OpenCL to accelerate.
+
+- header: >
+    Patterned Sapphire Substrate Manufacturing Process and LED Gesture Sensing Chip Design based on Time-series Signal
+    Processing Techniques
+  meta: >
+    2014 - 2015, cooperate with <a href="www.txccorp.com/">TXC Corporation</a>
+  description: >
+    Use Arduino to retrieve signals from multiple proximity sensors, then use
+    dynamic programming and machine learning algorithms to recognize the gesture.

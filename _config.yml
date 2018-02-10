@@ -1,0 +1,46 @@
+title: tzing's
+author: tzing
+description: tzing's awesome homepage.
+
+baseurl: ""
+url: "https://tzing.github.io"
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+highligher: rouge
+
+compress_html:
+  comments: ["<!-- ", " -->"]
+  blanklines: true
+
+permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Readme.md
+
+collections:
+  repos:
+    output: true
+    permalink: /:collection/:name
+
+defaults:
+  - scope:
+      path: ""
+      type: repos
+    values:
+      layout: repo
+
+# jekyll-seo-tag
+twitter:
+  username: tzingshih
+
+social:
+  name: Tzu-ting
+  links:
+    - https://github.com/tzing
+    - https://www.linkedin.com/in/tzing
+    - https://twitter.com/tzingshih

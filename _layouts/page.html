@@ -1,0 +1,52 @@
+---
+layout: base
+---
+<!--  Sidebar Menu  -->
+<div class="ui vertical sidebar menu">
+  {% include menu.html %}
+</div>
+
+<!--  Main container  -->
+<div class="pusher">
+
+  <!--  Cover  -->
+  <div class="ui vertical segment center aligned cover">
+
+    <!--  Top Menu  -->
+    <div class="ui container">
+      <div class="ui large secondary pointing inverted inverted menu">
+        <div class="right menu">
+          <a class="toc item">
+            <i class="sidebar icon"></i>
+          </a>
+          {% include menu.html %}
+        </div>
+      </div>
+    </div>
+
+    <!--  Heading  -->
+    <div class="ui text container">
+      <h1 class="ui inverted header">
+        {{ page.title }}
+        {% if page.subtitle %}
+        <div class="sub header">{{ page.subtitle }}</div>
+        {% endif %}
+      </h1>
+    </div>
+
+  </div><!-- ./cover -->
+
+  <!-- content -->
+  <div class="ui vertical segment">
+    <div class="ui text container">
+      {{ content }}
+    </div>
+  </div>
+
+  {% include footer.html %}
+
+  <!-- extra -->
+  {% if page.use_math %}
+    {% include mathjax.html %}
+  {% endif %}
+</div>

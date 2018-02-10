@@ -1,0 +1,37 @@
+{% if include.type == 'html' %}
+  {{ include.description }}
+
+{% else %}
+  <!-- main content -->
+  {% if include.description.first %}
+    <!-- array -->
+    {% for paragraph in include.description %}
+    <p>{{ paragraph }}</p>
+    {% endfor %}
+
+  {% else %}
+    <!-- string -->
+    <p>{{ include.description }}</p>
+
+  {% endif %}
+
+  <!-- labels -->
+  {% if include.labels %}
+    <p>
+    {% for label in include.labels %}
+      {% if label.text %}
+        {% include _item/label.html
+            link=label.link
+            text=label.text
+            icon=label.icon
+        %}
+      {% else %}
+        {% include _item/label.html
+            text=label
+        %}
+      {% endif %}
+    {% endfor %}
+    </p>
+  {% endif %}
+
+{% endif %}

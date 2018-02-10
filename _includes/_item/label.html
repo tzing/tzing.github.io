@@ -1,0 +1,17 @@
+<!-- start tag -->
+{% if include.link %}
+  <a class="ui label" href="{{ label.link }}">
+{% else %}
+  <span class="ui label">
+{% endif %}
+
+  <!-- content -->
+  {% if include.icon %}<i class="{{ include.icon }} icon"></i>{% endif %}
+  {{ include.text }}
+
+<!-- end tag -->
+{% if include.link %}
+  </a>
+{% else %}
+  </span>
+{% endif %}

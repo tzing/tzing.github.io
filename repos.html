@@ -1,0 +1,26 @@
+---
+layout: page
+title: Repositories
+---
+
+{% assign sorted_repos = site.repos | sort: "create" | reverse %}
+
+<div class="ui divided items">
+{% for item in sorted_repos %}
+  <!-- image -->
+  {% if item.image %}
+    {% capture image %}{{ item.image | relative_url }}{% endcapture %}
+  {% else %}
+    {% assign image = blank %}
+  {% endif%}
+
+  <!-- image -->
+  {% include item.html
+      image=image
+      header=item.title
+      header_link=item.url
+      description=item.description
+      labels=item.tags
+  %}
+{% endfor %}
+</div>

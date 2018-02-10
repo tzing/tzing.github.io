@@ -1,0 +1,103 @@
+---
+layout: base
+permalink: /
+
+title: Home
+
+photo: https://github.com/tzing.png
+header: "Tzu-ting"
+subheader: "@tzing"
+
+self_intro: >
+  I love programming.
+
+links:
+  - icon: github
+    url: https://github.com/tzing
+  - icon: linkedin square
+    url: https://www.linkedin.com/in/tzing
+  - icon: twitter
+    url: https://twitter.com/tzingshih
+
+sections:
+  - title: Education
+    icon: student
+    list: edu
+  - title: Intern
+    icon: suitcase
+    list: intern
+  - title: Projects
+    icon: flag
+    list: proj
+---
+<!--  Sidebar Menu  -->
+<div class="ui vertical sidebar menu">
+  {% include menu.html %}
+</div>
+
+<!--  Main container  -->
+<div class="pusher">
+
+  <!--  Cover  -->
+  <div class="ui vertical segment center aligned cover default background">
+
+    <!--  Top Menu  -->
+    <div class="ui container">
+      <div class="ui large secondary pointing inverted inverted menu">
+        <div class="right menu">
+          <a class="toc item">
+            <i class="sidebar icon"></i>
+          </a>
+          {% include menu.html %}
+        </div>
+      </div>
+    </div>
+
+    <!--  Heading  -->
+    <div class="ui text container">
+      <img class="ui small centered bordered circular image" src="{{ 'assets/placeholder/portrait.svg' | relative_url }}"  data-src="{{ page.photo }}">
+      <h1 class="ui inverted header">
+        {{ page.header }}
+        <div class="sub header">{{ page.subheader }}</div>
+      </h1>
+    </div>
+
+  </div><!-- ./cover -->
+
+  <!-- Basic Info -->
+  <div class="ui vertical segment center aligned">
+
+    <!--  Self intro  -->
+    <div class="ui text container">
+      {{ page.self_intro }}
+    </div>
+
+    <!--  Links  -->
+    <div class="ui massive horizontal link list">
+      {% for link in page.links %}
+      <a class="item" href="{{ link.url }}">
+        <i class="{{ link.icon }} icon"></i>
+      </a>
+      {% endfor %}
+    </div>
+
+  </div>
+
+  {% for section in page.sections %}
+    {% include list.html
+        title = section.title
+        icon = section.icon
+        list = section.list
+        data = 'about'
+    %}
+  {% endfor %}
+
+  {% include footer.html %}
+</div>
+
+<script>
+  // sticky headers to list
+  $('.ui.sticky').sticky({
+    offset: 20
+  });
+</script>
