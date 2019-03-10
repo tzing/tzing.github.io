@@ -3,7 +3,7 @@ author: tzing
 description: tzing's awesome homepage.
 
 baseurl: ""
-url: "https://tzing.github.io"
+url: "https://page.tzing.tw"
 
 plugins:
   - jekyll-sitemap
