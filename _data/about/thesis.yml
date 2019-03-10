@@ -1,0 +1,7 @@
+- header: Deformation invariant surface matching technique based on deep object detection
+  description: >
+    A method that could detect the specific image on arbitrary scene, with allowance of translation, rotation and deformation. It introduces a keypoint-based matching stategy for detecting target image and use a fully connected network as proposed keypoint matcher.
+  labels:
+    - icon: file pdf
+      text: Paper
+      link: https://www.youtube.com/playlist?list=PLOLL_0lhLJNu1Y7pMhOTjBJp3ppKykK1v
