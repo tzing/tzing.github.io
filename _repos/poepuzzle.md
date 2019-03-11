@@ -7,7 +7,7 @@ description: >
   in the online game <em>path of exile</em>.
 create: 2017-11-22
 tags:
-  - javascript
+  - ECMAScript
   - ⎝( OωO)⎠
 ---
 
