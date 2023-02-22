@@ -13,3 +13,5 @@ exclude:
   - .jekyll-cache/
   - Gemfile
   - Gemfile.lock
+
+author: tzing
