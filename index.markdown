@@ -1,4 +1,4 @@
 ---
-title: A tiny corner of the Internet
+title: A random corner on the Internet
 layout: page
 ---

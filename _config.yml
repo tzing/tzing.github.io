@@ -1,17 +1,14 @@
 title: tzing's
 description: A tiny corner of the Internet
-
+author: tzing
 lang: en-US
-timezone: Asia/Taipei
-repo: https://github.com/tzing/tzing.github.io/
-mode: light
 
 theme: klise
+mode: light
+
 plugins: []
 
 exclude:
   - .jekyll-cache/
   - Gemfile
   - Gemfile.lock
-
-author: tzing
