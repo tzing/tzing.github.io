@@ -5,7 +5,7 @@ layout: page
 ---
 
 Hi, I am **@tzing** (Tim Shih).
-Taiwanese 🇹🇼 Python developer, Mudkip breeder and Hyrule wanderer.
+Taiwanese 🇹🇼 Python developer, journalist in Lucky Clover Gazette, and Mudkip breeder in Hoenn.
 
 Worked as a ~~CRUD engineer~~ data engineer in marketing intelligence industry.
 Experienced in ~~data gluing~~ developing ETLs and plumbing data.
