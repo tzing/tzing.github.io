@@ -5,13 +5,15 @@ layout: page
 ---
 
 Hi, I am **@tzing** (Tim Shih).
-Taiwanese 🇹🇼 Python developer, journalist in Lucky Clover Gazette, and Mudkip breeder in Hoenn.
+Taiwanese 🇹🇼 Python developer, journalist in [Lucky Clover Gazette], and Mudkip breeder in [Hoenn].
 
 Worked as a ~~CRUD engineer~~ data engineer in customer context industry.
 Experienced in ~~data gluing~~ developing ETLs and plumbing data.
 
 Passionate about exploring new technologies and ideas through ~~posting PR in other people's repositories~~ participation in the open-source community.
 
+[Lucky Clover Gazette]: https://www.ign.com/wikis/the-legend-of-zelda-tears-of-the-kingdom/Lucky_Clover_Gazette
+[Hoenn]: https://pokemon.fandom.com/wiki/Hoenn
 
 **Links ✨**
 
